@@ -19,24 +19,28 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.gitHub className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
+                <Icons.cv className="h-5 w-5" />
+                <span className="sr-only">CV</span>
               </div>
             </Link>
-            <Link
-              to={siteConfig.links.youtube}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <Link to={siteConfig.links.github} target="_blank" rel="noreferrer">
               <div
                 className={buttonVariants({
                   size: "icon",
                   variant: "ghost",
                 })}
               >
-                <Icons.youtube className="h-5 w-5" />
-                <span className="sr-only">YouTube</span>
+                <Icons.gitHub className="h-5 w-5" />
+                <span className="sr-only">GitHub</span>
               </div>
+            </Link>
+
+            <Link
+              to={siteConfig.links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+            >
+
             </Link>
             <ModeToggle />
           </nav>
