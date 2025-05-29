@@ -3,6 +3,7 @@ import { useRoutes } from "react-router-dom"
 import { TailwindIndicator } from "./components/tailwind-indicator"
 import { Experience } from "@/components/experience.tsx"
 import { About } from "@/components/about.tsx"
+import { Projects } from "@/components/projects.tsx"
 
 const routes = [{ path: "/", element: <Home /> }]
 
@@ -12,6 +13,7 @@ function Home() {
       {About()}
 
       {Experience()}
+			{Projects()}
     </section>
 	)
 }
