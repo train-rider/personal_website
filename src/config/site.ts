@@ -15,7 +15,7 @@ export const siteConfig = {
     },
   ],
   links: {
-    linkedin: "https://youtube.com/@m6io",
+    linkedin: "https://linkedin.com/in/christopher-narayanan-5ba439266",
     github: "https://github.com/Queentaker",
     docs: "https://ui.shadcn.com",
     cv: "todo",
