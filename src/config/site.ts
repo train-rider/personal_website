@@ -1,9 +1,9 @@
 export type SiteConfig = typeof siteConfig
 
 export const siteConfig = {
-  name: "Vite",
+  name: "Christopher Narayanan",
   description:
-    "",
+    "Christopher Narayanan",
   mainNav: [
     {
       title: "Experience",
