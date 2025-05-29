@@ -2,7 +2,7 @@ import { Card, CardContent, CardDescription,CardHeader, CardTitle } from "@/comp
 
 export function Projects() {
 	return (
-		<div className = "sm:grid sm:grid-cols-3 space-x-2">
+		<div className ="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2">
 				<Card>
 					<CardHeader>
 						<CardTitle>
