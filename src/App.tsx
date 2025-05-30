@@ -5,7 +5,19 @@ import { Experience } from "@/components/experience.tsx"
 import { About } from "@/components/about.tsx"
 import { Projects } from "@/components/projects.tsx"
 
-const routes = [{ path: "/", element: <Home /> }]
+const routes = [{ path: "/", element: <Home /> }, {path: "/cv", element: <CV />}]
+
+function CV() {
+	return (
+		<section className="container py-10">
+			<iframe
+				src="src/assets/CV_Christopher_Narayanan.pdf"
+				title="Christopher Narayanan CV"
+				className="w-full h-[90vh]"
+			/>
+		</section>
+	)
+}
 
 function Home() {
 	return (

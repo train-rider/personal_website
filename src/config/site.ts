@@ -18,6 +18,6 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/christopher-narayanan-5ba439266",
     github: "https://github.com/Queentaker",
     docs: "https://ui.shadcn.com",
-    cv: "todo",
+    cv: "/cv",
   },
 }

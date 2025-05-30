@@ -1,3 +1,7 @@
 export function Experience() {
-	return <div className="bg-amber-100">Hello</div>
+	return <div>
+		<h2> Teaching Experience </h2>
+		<h2> Industry Experience </h2>
+		<h2> Volunteering </h2>
+	</div>
 }

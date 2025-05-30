@@ -3,7 +3,7 @@ export function About() {
 		<div className="flex max-w-[980px]  items-start gap-2">
 			<div>
 			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-				About
+				Hi, I&apos;m Christopher Narayanan
 			</h1>
 			<p className="text-lg text-muted-foreground">
 				Hi, I&apos;m <span className="font-bold"> Christopher Narayanan </span>, a software
