@@ -1,14 +1,13 @@
-import { Card, CardContent, CardDescription,CardHeader, CardTitle } from "@/components/ui/card.tsx"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card.tsx"
 
 export function Projects() {
 	return (
-		<div className ="md:grid md:grid-cols-2 lg:grid-cols-3 gap-2">
+		<div className ="gap-2 md:grid md:grid-cols-2 lg:grid-cols-3">
 				<Card>
 					<CardHeader>
 						<CardTitle>
-							A Design Space for the Validation of LLM-Generated Tabular Data
+							Framework Validation LLM-Generated  Data
 						</CardTitle>
-						<CardDescription>Card Description</CardDescription>
 					</CardHeader>
 					<CardContent>
 						<img src={"src/assets/projects/eurova25.png"}/>
@@ -17,31 +16,29 @@ export function Projects() {
 
 
 
-				<Card>
-					<CardHeader>
-						<CardTitle>
-							A Design Space for the Validation of LLM-Generated Tabular Data
-						</CardTitle>
-						<CardDescription>Card Description</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<img src={"src/assets/projects/eurova25.png"}/>
-					</CardContent>
-				</Card>
-
 
 
 				<Card>
 					<CardHeader>
 						<CardTitle>
-							A Design Space for the Validation of LLM-Generated Tabular Data
+							FinValidate -  LLM Data Validation Tool
 						</CardTitle>
-						<CardDescription>Card Description</CardDescription>
+
 					</CardHeader>
 					<CardContent>
 						<img src={"src/assets/projects/ba_thesis_overview.png"}/>
 					</CardContent>
 				</Card>
+			<Card>
+				<CardHeader>
+					<CardTitle>
+						Stadt Land + -  Real-Time Multiplayer Game
+					</CardTitle>
+				</CardHeader>
+				<CardContent>
+					<img src={"src/assets/projects/SopRA dashboard.png"}/>
+				</CardContent>
+			</Card>
 		</div>
 	)
 }
