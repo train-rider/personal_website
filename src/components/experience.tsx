@@ -20,22 +20,22 @@ export function Position({
 	responsibilities,
 }: PositionProps) {
 	return (
-		<Card className="mb-6 flex flex-col items-start space-x-4 p-4 md:flex-row md:items-center">
+		<Card className="mb-6 flex flex-col items-start space-x-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
 			<div className="flex size-16 flex-col items-center justify-center  rounded-md">
-				<img src={logoSrc} alt={logoAlt} className=" max-h-14 max-w-14" />
+				<img src={logoSrc} alt={logoAlt} className=" max-h-14   max-w-14 object-contain" />
 			</div>
 			<div className="flex w-full flex-col md:flex-row md:justify-between">
-				<div className="mb-4 md:mb-0 md:w-3/4">
+				<div className="mb-4 sm:mb-0 sm:w-3/4">
 					<CardTitle className="text-lg">
 						{companyName} - {positionTitle}
 					</CardTitle>
-					<ul className="mt-2 list-disc pl-5  text-gray-700 dark:text-gray-300">
+					<ul className="mt-2 list-disc pl-7  text-gray-700 dark:text-gray-300">
 						{responsibilities.map((responsibility, index) => (
 							<li key={index}>{responsibility}</li>
 						))}
 					</ul>
 				</div>
-				<p className=" text-muted-foreground md:w-1/4 md:text-right">
+				<p className=" text-muted-foreground sm:w-1/4 sm:text-right">
 					{startDate} - {endDate}
 				</p>
 			</div>
@@ -48,7 +48,7 @@ export function Experience() {
 		<div>
 			<h2 className="text-lg font-medium"> Job Experience </h2>
 			<Position
-				logoSrc="src/assets/experience/sbb_logo.png" // Make sure you have an SBB logo
+				logoSrc="src/assets/experience/sbb_logo_3.png" // Make sure you have an SBB logo
 				logoAlt="SBB Logo"
 				companyName="SBB (Swiss Federal Railways)"
 				positionTitle="Data Analyst Intern"
@@ -73,6 +73,16 @@ export function Experience() {
 					"Participated in code reviews and contributed to improving development best practices.",
 				]}
 			/>
+			<Position logoSrc={"src/assets/experience/uzh-logo.png"}
+								logoAlt={"Deperatment of Finance - UZH"}
+								companyName={"Department of Finance UZH"} positionTitle={"Junior Software Developer"}
+								startDate={"Feb 2022"}
+								endDate={"Jan 2025"}
+								responsibilities={[
+									"Designed a proof of concept for fraud detection of digital exams with over 500+ students using Python.",
+									"Managed the technical process of creating and correcting Excel exams for over 1000 students.",
+									"Enabled the usage of custom elements for the homepage by developing webcomponents (React + Tailwind)."
+								]}/>
 
 			<h2 className="text-lg font-medium"> Industry Experience </h2>
 			<h2 className="text-lg font-medium"> Volunteering </h2>
