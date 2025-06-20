@@ -14,7 +14,7 @@ function CV() {
 			<iframe
 				src="src/assets/CV_Christopher_Narayanan.pdf"
 				title="Christopher Narayanan CV"
-				className="w-full h-[90vh]"
+				className="h-[90vh] w-full"
 			/>
 		</section>
 	)
@@ -25,10 +25,10 @@ function Home() {
 		<section className="container grid items-center gap-4 pb-8 pt-6 md:py-10">
 			{About()}
 			<Separator/>
-			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+			<div id="experience"><h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
 				Experience
 			</h1>
-			{Experience()}
+				{Experience()}</div>
 			<Separator/>
 			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
 				Projects
@@ -44,8 +44,10 @@ function App() {
 	return (
 		<>
 			<div className="relative flex min-h-screen flex-col">
-				<SiteHeader />
-				<div className="flex-1">{children}</div>
+				<div className="sticky top-0 z-50">
+					<SiteHeader />
+				</div>
+				<div className="flex-1 pt-2">{children}</div>
 			</div>
 			<TailwindIndicator />
 		</>
