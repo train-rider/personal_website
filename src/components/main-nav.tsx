@@ -18,16 +18,36 @@ export function MainNav({ items }: MainNavProps) {
 					{items?.map(
 						(item, index) =>
 							item.href && (
-								<Link
-									key={index}
-									to={item.href}
-									className={cn(
-										"flex items-center text-sm font-medium text-muted-foreground",
-										item.disabled && "cursor-not-allowed opacity-80",
-									)}
-								>
-									{item.title}
-								</Link>
+								item.href.startsWith("#") ? (
+									<a
+										key={index}
+										href={item.href}
+										className={cn(
+											"flex items-center text-sm font-medium text-muted-foreground",
+											item.disabled && "cursor-not-allowed opacity-80",
+										)}
+										onClick={e => {
+											e.preventDefault();
+											const el = document.getElementById(item.href.slice(1));
+											if (el) {
+												el.scrollIntoView({ behavior: "smooth" });
+											}
+										}}
+									>
+										{item.title}
+									</a>
+								) : (
+									<a
+										key={index}
+										href={item.href}
+										className={cn(
+											"flex items-center text-sm font-medium text-muted-foreground",
+											item.disabled && "cursor-not-allowed opacity-80",
+										)}
+									>
+										{item.title}
+									</a>
+								)
 							),
 					)}
 				</nav>
