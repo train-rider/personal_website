@@ -90,8 +90,6 @@ export function Experience() {
 				]}
 			/>
 
-			<h2 className="text-lg font-medium"> Industry Experience </h2>
-			<h2 className="text-lg font-medium"> Volunteering </h2>
 		</>
 	)
 }
