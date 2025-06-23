@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { siteConfig } from "@/config/site.ts"
 import { buttonVariants } from "@/components/ui/button.tsx"
 import { Icons } from "@/components/icons.tsx"
+import { Card } from "@/components/ui/card.tsx"
 
 export function About() {
 	return (
@@ -17,7 +18,7 @@ export function About() {
 				</p>
 
 				<div className="flex flex-1 items-center space-x-4">
-					<nav className="flex items-center space-x-1">
+					<Card className="flex items-center space-x-1">
 						<Link to={siteConfig.links.cv} target="_blank" rel="noreferrer">
 							<div
 								className={buttonVariants({
@@ -55,7 +56,7 @@ export function About() {
 								<span className="sr-only">GitHub</span>
 							</div>
 						</Link>
-					</nav>
+					</Card>
 				</div>
 			</div>
 			<img

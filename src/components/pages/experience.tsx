@@ -20,7 +20,7 @@ export function Position({
 	responsibilities,
 }: PositionProps) {
 	return (
-		<Card className="mb-6 flex flex-col items-start space-x-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
+		<Card className="mb-6 flex flex-col items-start space-x-4  p-4 sm:flex-row sm:items-center lg:w-4/5">
 			<div className="flex size-16 flex-col items-center justify-center  rounded-md">
 				<img
 					src={logoSrc}
