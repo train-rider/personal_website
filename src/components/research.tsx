@@ -1,6 +1,18 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card.tsx"
 import { Badge } from "@/components/ui/badge.tsx"
 
+export function Research() {
+	return (
+		<div className="gap-2 md:grid md:grid-cols-2 lg:grid-cols-2">
+			{DesignSpace}
+
+
+			{FinValidate}
+			{StadtLandPlus}
+		</div>
+	)
+}
+
 const DesignSpace = <Card className="shadow
 ">
 	<CardHeader>
@@ -63,15 +75,3 @@ const StadtLandPlus = <Card>
 		fast-paced trivia game.
 	</CardDescription>
 </Card>
-
-export function Research() {
-	return (
-		<div className="gap-2 md:grid md:grid-cols-2 lg:grid-cols-2">
-			{DesignSpace}
-
-
-			{FinValidate}
-			{StadtLandPlus}
-		</div>
-	)
-}
