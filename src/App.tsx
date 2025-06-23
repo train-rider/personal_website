@@ -1,9 +1,9 @@
 import { SiteHeader } from "@/components/site-header"
 import { useRoutes,  } from "react-router-dom"
 import { TailwindIndicator } from "./components/tailwind-indicator"
-import { Experience } from "@/components/experience.tsx"
-import { About } from "@/components/about.tsx"
-import { Research } from "@/components/research.tsx"
+import { Experience } from "@/components/pages/experience.tsx"
+import { About } from "@/components/pages/about.tsx"
+import { Research } from "@/components/pages/research.tsx"
 import { Separator } from "@/components/ui/separator.tsx"
 
 const routes = [{ path: "/", element: <Home /> }, {path: "/cv", element: <CV />}]
