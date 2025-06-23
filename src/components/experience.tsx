@@ -45,8 +45,9 @@ export function Position({
 
 export function Experience() {
 	return (
-		<div>
-			<h2 className="text-lg font-medium" id={"Experience"}> Job Experience </h2>
+		<div id={"Experience"}>
+
+			<div ><h2 className="text-lg font-medium"> Job Experience </h2></div>
 			<Position
 				logoSrc="src/assets/experience/sbb_logo_3.png" // Make sure you have an SBB logo
 				logoAlt="SBB Logo"

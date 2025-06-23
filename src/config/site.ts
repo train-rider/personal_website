@@ -7,12 +7,16 @@ export const siteConfig = {
   mainNav: [
     {
       title: "Experience",
-      href: "/",
+      href: "#experience",
     },
     {
-      title: "Projects",
-      href: "/",
+      title: "Publications & Research",
+      href: "#Research",
     },
+		{
+			title: "Projects",
+			href: "#projects",
+		}
   ],
   links: {
     linkedin: "https://linkedin.com/in/christopher-narayanan-5ba439266",
