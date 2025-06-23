@@ -1,13 +1,13 @@
 import { Card, CardTitle } from "@/components/ui/card.tsx"
 
 interface PositionProps {
-	logoSrc: string;
-	logoAlt: string;
-	companyName: string;
-	positionTitle: string;
-	startDate: string;
-	endDate: string;
-	responsibilities: string[];
+	logoSrc: string
+	logoAlt: string
+	companyName: string
+	positionTitle: string
+	startDate: string
+	endDate: string
+	responsibilities: string[]
 }
 
 export function Position({
@@ -22,7 +22,11 @@ export function Position({
 	return (
 		<Card className="mb-6 flex flex-col items-start space-x-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
 			<div className="flex size-16 flex-col items-center justify-center  rounded-md">
-				<img src={logoSrc} alt={logoAlt} className=" max-h-14   max-w-14 object-contain" />
+				<img
+					src={logoSrc}
+					alt={logoAlt}
+					className=" max-h-14   max-w-14 object-contain"
+				/>
 			</div>
 			<div className="flex w-full flex-col md:flex-row md:justify-between">
 				<div className="mb-4 sm:mb-0 sm:w-3/4">
@@ -45,9 +49,7 @@ export function Position({
 
 export function Experience() {
 	return (
-		<div id={"Experience"}>
-
-			<div ><h2 className="text-lg font-medium"> Job Experience </h2></div>
+		<>
 			<Position
 				logoSrc="src/assets/experience/sbb_logo_3.png" // Make sure you have an SBB logo
 				logoAlt="SBB Logo"
@@ -74,19 +76,22 @@ export function Experience() {
 					"Participated in code reviews and contributed to improving development best practices.",
 				]}
 			/>
-			<Position logoSrc={"src/assets/experience/uzh-logo.png"}
-								logoAlt={"Deperatment of Finance - UZH"}
-								companyName={"Department of Finance UZH"} positionTitle={"Junior Software Developer"}
-								startDate={"Feb 2022"}
-								endDate={"Jan 2025"}
-								responsibilities={[
-									"Designed a proof of concept for fraud detection of digital exams with over 500+ students using Python.",
-									"Managed the technical process of creating and correcting Excel exams for over 1000 students.",
-									"Enabled the usage of custom elements for the homepage by developing webcomponents (React + Tailwind)."
-								]}/>
+			<Position
+				logoSrc={"src/assets/experience/uzh-logo.png"}
+				logoAlt={"Deperatment of Finance - UZH"}
+				companyName={"Department of Finance UZH"}
+				positionTitle={"Junior Software Developer"}
+				startDate={"Feb 2022"}
+				endDate={"Jan 2025"}
+				responsibilities={[
+					"Designed a proof of concept for fraud detection of digital exams with over 500+ students using Python.",
+					"Managed the technical process of creating and correcting Excel exams for over 1000 students.",
+					"Enabled the usage of custom elements for the homepage by developing webcomponents (React + Tailwind).",
+				]}
+			/>
 
 			<h2 className="text-lg font-medium"> Industry Experience </h2>
 			<h2 className="text-lg font-medium"> Volunteering </h2>
-		</div>
+		</>
 	)
 }
