@@ -21,7 +21,7 @@ export function Position({
 }: PositionProps) {
 	return (
 		<Card className="mb-6 flex flex-col items-start space-x-4  p-4 sm:flex-row sm:items-center lg:w-4/5">
-			<div className="flex size-16 flex-col items-center justify-center  rounded-md">
+			<div className="flex size-16 flex-col items-center justify-center  rounded-md text-sm md:text-base">
 				<img
 					src={logoSrc}
 					alt={logoAlt}
@@ -67,7 +67,7 @@ export function Experience() {
 				logoSrc="src/assets/experience/novartis_logo.png"
 				logoAlt="Novartis Logo"
 				companyName="Novartis"
-				positionTitle="Frontend Developer"
+				positionTitle="Data Scientist Intern"
 				startDate="Jan 2023"
 				endDate="Dec 2024"
 				responsibilities={[

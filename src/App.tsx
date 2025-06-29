@@ -5,6 +5,7 @@ import { Experience } from "@/components/pages/experience.tsx"
 import { About } from "@/components/pages/about.tsx"
 import { Research } from "@/components/pages/research.tsx"
 import { Separator } from "@/components/ui/separator.tsx"
+import { Projects } from "@/components/pages/projects.tsx"
 
 const routes = [{ path: "/", element: <Home /> }, {path: "/cv", element: <CV />}]
 
@@ -27,18 +28,21 @@ function Home() {
 			{About()}
 			</div>
 			<Separator/>
-			<div id="experience"><h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+				<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id="experience">
 				Experience
 			</h1>
-				{Experience()}</div>
+				{Experience()}
+
 			<Separator/>
 			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"research"}>
 				Publications & Research
 			</h1>
 			{Research()}
+			<Separator/>
 			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"projects"}>
 				Projects
 			</h1>
+			{Projects()}
 		</section>
 	)
 }
