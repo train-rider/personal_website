@@ -11,7 +11,7 @@ export const siteConfig = {
     },
     {
       title: "Publications & Research",
-      href: "#Research",
+      href: "#research",
     },
 		{
 			title: "Projects",

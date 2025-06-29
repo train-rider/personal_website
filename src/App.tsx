@@ -32,10 +32,13 @@ function Home() {
 			</h1>
 				{Experience()}</div>
 			<Separator/>
-			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"Research"}>
+			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"research"}>
 				Publications & Research
 			</h1>
 			{Research()}
+			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"projects"}>
+				Projects
+			</h1>
 		</section>
 	)
 }
