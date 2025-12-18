@@ -58,9 +58,10 @@ export function Experience() {
 				startDate="May 2025"
 				endDate="Today"
 				responsibilities={[
-					"Analyzed large datasets to identify trends and insights for operational improvements.",
-					"Developed automated reports using SQL and Python to streamline data processes.",
-					"Collaborated with cross-functional teams to define data requirements and reporting metrics.",
+					"Led a PoC forecasting model for CHF 200M of internal demand, achieving an accuracy error of 15% where no historical baseline existed.",
+					"Identified potential to reduce working capital by up to 10% (20M), minimize stockouts, and leverage accurate forecasts to negotiate better procurement prices.",
+					"Created a recycling analytics dashboard to solve project visibility issues, identifying 20 strategic leads.",
+					"Defined KPIs to track and optimize the cost benefits of internal vs. external recycling, supporting management in securing funding for the internal team.",
 				]}
 			/>
 			<Position
@@ -71,9 +72,9 @@ export function Experience() {
 				startDate="Jan 2023"
 				endDate="Dec 2024"
 				responsibilities={[
-					"Developed and maintained user interfaces for internal applications using React and TypeScript.",
-					"Implemented responsive designs with Tailwind CSS and integrated Shadcn UI components.",
-					"Participated in code reviews and contributed to improving development best practices.",
+					"Led two comparative performance analyses for financial KPIs used by senior management and a project exploring zero-shot learning solutions (genAI) use cases for time-series forecasting.",
+					"Identified AI models that are more accurate by 10% and stabler by 30% than the current models being used, discovered weaknesses in these models, and proposed solutions to these issues.",
+					"Utilized Python, particularly Pandas and Plotly, for data manipulation and visualization.",
 				]}
 			/>
 			<Position
