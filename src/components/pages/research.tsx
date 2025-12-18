@@ -38,6 +38,7 @@ const DesignSpace = (
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke="currentColor"
+						className="w-[1em] h-[1em] inline-block ml-1 align-baseline"
 					>
 						<path
 							strokeLinecap="round"

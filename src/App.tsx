@@ -2,6 +2,7 @@ import { SiteHeader } from "@/components/site-header"
 import { useRoutes,  } from "react-router-dom"
 import { TailwindIndicator } from "./components/tailwind-indicator"
 import { Experience } from "@/components/pages/experience.tsx"
+import { Education } from "@/components/pages/education.tsx"
 import { About } from "@/components/pages/about.tsx"
 import { Research } from "@/components/pages/research.tsx"
 import { Separator } from "@/components/ui/separator.tsx"
@@ -32,6 +33,12 @@ function Home() {
 				Experience
 			</h1>
 				{Experience()}
+
+			<Separator/>
+			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id="education">
+				Education
+			</h1>
+			{Education()}
 
 			<Separator/>
 			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"research"}>

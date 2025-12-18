@@ -10,6 +10,10 @@ export const siteConfig = {
       href: "#experience",
     },
     {
+      title: "Education",
+      href: "#education",
+    },
+    {
       title: "Publications & Research",
       href: "#research",
     },
