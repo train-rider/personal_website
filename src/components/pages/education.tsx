@@ -20,12 +20,12 @@ export function EducationItem({
 	details,
 }: EducationItemProps) {
 	return (
-		<Card className="mb-6 flex flex-col items-start space-x-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
-			<div className="flex size-16 flex-col items-center justify-center rounded-md text-sm md:text-base">
+		<Card className="mb-6 flex flex-col items-start gap-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
+			<div className="flex aspect-square size-16 transform items-center justify-center rounded-md bg-white p-2 transition-transform hover:scale-105 dark:bg-zinc-900">
 				<img
 					src={logoSrc}
 					alt={logoAlt}
-					className="max-h-14 max-w-14 object-contain"
+					className="h-full w-full object-contain"
 				/>
 			</div>
 			<div className="flex w-full flex-col md:flex-row md:justify-between">

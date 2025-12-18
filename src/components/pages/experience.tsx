@@ -7,7 +7,7 @@ interface PositionProps {
 	positionTitle: string
 	startDate: string
 	endDate: string
-	responsibilities: string[]
+	responsibilities: (string | JSX.Element)[]
 }
 
 export function Position({
@@ -20,12 +20,12 @@ export function Position({
 	responsibilities,
 }: PositionProps) {
 	return (
-		<Card className="mb-6 flex flex-col items-start space-x-4  p-4 sm:flex-row sm:items-center lg:w-4/5">
-			<div className="flex size-16 flex-col items-center justify-center  rounded-md text-sm md:text-base">
+		<Card className="mb-6 flex flex-col items-start gap-4 p-4 sm:flex-row sm:items-center lg:w-4/5">
+			<div className="flex aspect-square size-16 transform items-center justify-center rounded-md bg-white p-2 transition-transform hover:scale-105 dark:bg-zinc-900">
 				<img
 					src={logoSrc}
 					alt={logoAlt}
-					className=" max-h-14   max-w-14 object-contain"
+					className="h-full w-full object-contain"
 				/>
 			</div>
 			<div className="flex w-full flex-col md:flex-row md:justify-between">
@@ -33,13 +33,15 @@ export function Position({
 					<CardTitle className="text-lg">
 						{companyName} - {positionTitle}
 					</CardTitle>
-					<ul className="mt-2 list-disc pl-7  text-gray-700 dark:text-gray-300">
+					<ul className="mt-2 list-disc pl-7 text-gray-700 dark:text-gray-300">
 						{responsibilities.map((responsibility, index) => (
-							<li key={index}>{responsibility}</li>
+							<li key={index} className="mb-1">
+								{responsibility}
+							</li>
 						))}
 					</ul>
 				</div>
-				<p className=" text-muted-foreground sm:w-1/4 sm:text-right">
+				<p className="text-muted-foreground sm:w-1/4 sm:text-right">
 					{startDate} - {endDate}
 				</p>
 			</div>
@@ -51,17 +53,34 @@ export function Experience() {
 	return (
 		<>
 			<Position
-				logoSrc="src/assets/experience/sbb_logo_3.png" // Make sure you have an SBB logo
+				logoSrc="src/assets/experience/sbb_logo_3.png"
 				logoAlt="SBB Logo"
 				companyName="SBB (Swiss Federal Railways)"
 				positionTitle="Data Analyst Intern"
 				startDate="May 2025"
 				endDate="Today"
 				responsibilities={[
-					"Led a PoC forecasting model for CHF 200M of internal demand, achieving an accuracy error of 15% where no historical baseline existed.",
-					"Identified potential to reduce working capital by up to 10% (20M), minimize stockouts, and leverage accurate forecasts to negotiate better procurement prices.",
-					"Created a recycling analytics dashboard to solve project visibility issues, identifying 20 strategic leads.",
-					"Defined KPIs to track and optimize the cost benefits of internal vs. external recycling, supporting management in securing funding for the internal team.",
+					<>
+						Led a PoC forecasting model for <strong>CHF 200M</strong> of
+						internal demand, achieving an accuracy error of <strong>15%</strong>{" "}
+						where no historical baseline existed.
+					</>,
+					<>
+						Identified annual saving potential of <strong>CHF 20M</strong> (
+						<strong>10% reduction</strong> in working capital) through optimized
+						procurement and minimized stockouts.
+					</>,
+					<>
+						Engineered a <strong>recycling analytics dashboard</strong> that
+						automated manual workflows for a <strong>20-person team</strong>,
+						generating <strong>20 strategic leads</strong> immediately upon
+						launch.
+					</>,
+					<>
+						Defined <strong>KPIs</strong> to optimize cost benefits of internal
+						vs. external recycling, securing <strong>management funding</strong>
+						.
+					</>,
 				]}
 			/>
 			<Position
@@ -69,25 +88,45 @@ export function Experience() {
 				logoAlt="Novartis Logo"
 				companyName="Novartis"
 				positionTitle="Data Scientist Intern"
-				startDate="Jan 2023"
-				endDate="Dec 2024"
+				startDate="Jul - Sep"
+				endDate="2023 & 2024"
 				responsibilities={[
-					"Led two comparative performance analyses for financial KPIs used by senior management and a project exploring zero-shot learning solutions (genAI) use cases for time-series forecasting.",
-					"Identified AI models that are more accurate by 10% and stabler by 30% than the current models being used, discovered weaknesses in these models, and proposed solutions to these issues.",
-					"Utilized Python, particularly Pandas and Plotly, for data manipulation and visualization.",
+					<>
+						Conducted comparative analyses for <strong>financial KPIs</strong>{" "}
+						and explored <strong>Zero-Shot Learning (genAI)</strong> use cases
+						for time-series forecasting.
+					</>,
+					<>
+						Identified AI models <strong>10% more accurate</strong> and{" "}
+						<strong>30% more stable</strong> than current benchmarks.
+					</>,
+					<>
+						Utilized <strong>Python (Pandas, Plotly)</strong> for advanced data
+						manipulation and financial visualization.
+					</>,
 				]}
 			/>
 			<Position
 				logoSrc={"src/assets/experience/uzh-logo.png"}
-				logoAlt={"Deperatment of Finance - UZH"}
+				logoAlt={"Department of Finance - UZH"}
 				companyName={"Department of Finance UZH"}
 				positionTitle={"Junior Software Developer"}
 				startDate={"Feb 2022"}
 				endDate={"Jan 2025"}
 				responsibilities={[
-					"Designed a proof of concept for fraud detection of digital exams with over 500+ students using Python.",
-					"Managed the technical process of creating and correcting Excel exams for over 1000 students.",
-					"Enabled the usage of custom elements for the homepage by developing webcomponents (React + Tailwind).",
+					<>
+						Designed a proof of concept for <strong>fraud detection</strong> in
+						digital exams for <strong>500+ students</strong> using Python.
+					</>,
+					<>
+						Managed technical creation/correction of{" "}
+						<strong>Excel-based exams</strong> for over{" "}
+						<strong>1,000 students</strong>.
+					</>,
+					<>
+						Developed custom <strong>webcomponents</strong> using{" "}
+						<strong>React and Tailwind CSS</strong>.
+					</>,
 				]}
 			/>
 
