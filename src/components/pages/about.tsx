@@ -49,16 +49,13 @@ export function About() {
 			id={"about"}
 		>
 			<div className="space-y-8">
-				<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+				<h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
 					Hi, I&apos;m Christopher
 				</h1>
-				<p className="text-lg text-muted-foreground">
-					I enable data-driven decision-making at SBB and previously at
-					Novartis. My expertise lies in developing solutions for data analysis
-					workflows, carefully balancing algorithmic automation with human
-					knowledge to ensure high-quality analytical outcomes. I studied
-					Computer Science at the University of Zurich, where I focused on
-					Business Informatics and Banking & Finance.
+				<p className="text-xl text-muted-foreground">
+					MSc Student in Management, Technology, and Economics at ETH Zürich. I
+					bridge the gap between Computer Science and Business Strategy,
+					leveraging data analytics to drive measurable financial impact.
 				</p>
 
 				{Medialinks}
