@@ -7,6 +7,7 @@ import { About } from "@/components/pages/about.tsx"
 import { Research } from "@/components/pages/research.tsx"
 import { Separator } from "@/components/ui/separator.tsx"
 import { Projects } from "@/components/pages/projects.tsx"
+import { Skills } from "@/components/pages/skills.tsx"
 
 const routes = [{ path: "/", element: <Home /> }, {path: "/cv", element: <CV />}]
 
@@ -50,6 +51,11 @@ function Home() {
 				Projects
 			</h1>
 			{Projects()}
+			<Separator/>
+			<h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl" id={"skills"}>
+				Skills & Languages
+			</h1>
+			{Skills()}
 		</section>
 	)
 }

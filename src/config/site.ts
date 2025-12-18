@@ -20,6 +20,10 @@ export const siteConfig = {
 		{
 			title: "Projects",
 			href: "#projects",
+		},
+		{
+			title: "Skills",
+			href: "#skills",
 		}
   ],
   links: {

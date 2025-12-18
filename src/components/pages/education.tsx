@@ -51,27 +51,27 @@ export function Education() {
 	return (
 		<>
 			<EducationItem
-				logoSrc="src/assets/experience/uzh-logo.png"
-				logoAlt="University of Zurich Logo"
-				institution="University of Zurich"
-				degree="MSc in Informatics"
-				startDate="Sep 2023"
-				endDate="Today"
+				logoSrc="src/assets/experience/eth_logo.png"
+				logoAlt="ETH Zürich Logo"
+				institution="ETH Zürich"
+				degree="MSc in Management, Technology, and Economics"
+				startDate="2025"
+				endDate="2028"
 				details={[
-					"Specialization in Information Systems.",
-					"Relevant coursework: Machine Learning, Data Visualization, Advanced Software Engineering.",
+					"Focusing on the intersection of technology and business strategy.",
+					"Developing advanced skills in management and economic decision-making.",
 				]}
 			/>
 			<EducationItem
 				logoSrc="src/assets/experience/uzh-logo.png"
 				logoAlt="University of Zurich Logo"
 				institution="University of Zurich"
-				degree="BSc in Informatics"
-				startDate="Sep 2020"
-				endDate="Aug 2023"
+				degree="BSc in Computer Science"
+				startDate="2021"
+				endDate="2025"
 				details={[
-					"Graduated with honors.",
-					"Bachelor Thesis: FinValidate - A project for financial data validation.",
+					"Major: Information Systems; Minor: Banking & Finance.",
+					"Thesis: Visual Validation and Analysis of LLM-Generated Features for Stock Data.",
 				]}
 			/>
 		</>
