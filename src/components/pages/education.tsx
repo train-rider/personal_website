@@ -74,6 +74,18 @@ export function Education() {
 					"Thesis: Visual Validation and Analysis of LLM-Generated Features for Stock Data.",
 				]}
 			/>
+			<EducationItem
+				logoSrc="src/assets/experience/gymnasium_logo.png"
+				logoAlt="Gymnasium München Logo"
+				institution="Gymnasium München"
+				degree="Abitur"
+				startDate="2012"
+				endDate="2020"
+				details={[
+					"Completed secondary education with a focus on core academic subjects.",
+					"Participated in various extracurricular activities and school projects.",
+				]}
+			/>
 		</>
 	)
 }
